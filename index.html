@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rehan Ahmed · AI Researcher</title>
+  <meta name="description" content="Rehan Ahmed: undergraduate AI researcher at DHA Suffa University working on scaling laws, learning with noisy labels, computer vision and medical AI.">
+
+  <!-- Link previews (WhatsApp, LinkedIn, etc.) -->
+  <meta property="og:title" content="Rehan Ahmed · AI Researcher">
+  <meta property="og:description" content="Undergraduate AI researcher working on scaling laws, learning with noisy labels, computer vision and medical AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rehanabbaxi.github.io/">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Apply the saved light/dark choice before the page paints (avoids a flash) -->
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ===================== TOP NAVIGATION ===================== -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">Rehan Ahmed</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <!-- ===================== INTRO ===================== -->
+    <section class="hero">
+      <div class="avatar" aria-hidden="false">
+        <span class="avatar-initials">RA</span>
+        <!-- To show your photo, put a square image named photo.jpg inside the "assets" folder -->
+        <img src="assets/photo.jpg" alt="Photo of Rehan Ahmed" onerror="this.remove()">
+      </div>
+      <div class="hero-text">
+        <h1>Rehan Ahmed</h1>
+        <p class="tagline">BS Artificial Intelligence, DHA Suffa University · Karachi, Pakistan</p>
+        <p class="bio">
+          I'm an undergraduate AI researcher (CGPA 3.82 / 4.0). My current work studies how
+          vision-language models (VLMs) scale when their training labels are noisy. I'm doing this at
+          <a href="https://sites.google.com/view/turing-math-labs" target="_blank" rel="noopener">Turing Math Labs</a>,
+          and the target venue is TMLR. Before that I worked on super-resolution for satellite imagery with
+          Pakistan's national space agency (SUPARCO) and on early sepsis prediction from ICU data.
+          In 2026 I received a <strong>Mitacs Globalink Research Award</strong>.
+        </p>
+        <p class="interests">
+          <span>Vision-language models</span><span>Scaling laws</span><span>Learning with noisy labels</span><span>Computer vision</span><span>Medical AI</span><span>Interpretable ML</span>
+        </p>
+        <div class="links">
+          <a class="btn btn-primary" href="assets/cv.pdf" download>Download CV</a>
+          <a class="btn" href="mailto:rehan020345@gmail.com">Email</a>
+          <a class="btn" href="https://github.com/Rehanabbaxi" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/rehan-ahmed-87720322a" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://medium.com/@rehan020345" target="_blank" rel="noopener">Medium</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section id="research" class="section">
+      <h2>Research Experience</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3><a class="entry-link" href="https://sites.google.com/view/turing-math-labs" target="_blank" rel="noopener">Turing Math Labs ↗</a></h3>
+          <span class="date">2026 – Present</span>
+        </div>
+        <p class="entry-sub">Undergraduate Researcher · Advisor: Dr. Vinoth Nandakumar · Remote</p>
+        <ul>
+          <li>Studying neural scaling laws when training labels are noisy, extending the scaling-law framework of Bahri et al. to settings where supervision is corrupted. Targeting a TMLR submission.</li>
+          <li>Benchmarking against Co-teaching, the standard noise-robust baseline, to isolate how sample-selection methods change the shape of the loss-versus-scale curve.</li>
+          <li>Running controlled experiments on multilingual OCR data, corrupting text labels at set probabilities through a parametric noise model.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>DHA Suffa University × SUPARCO</h3>
+          <span class="date">Mar 2025 – Jul 2025</span>
+        </div>
+        <p class="entry-sub">Research Assistant, Image Enhancement Models · Karachi</p>
+        <ul>
+          <li>Built and benchmarked SRGAN and SwinIR pipelines for 4× super-resolution of low-resolution satellite imagery, with Pakistan's national space agency.</li>
+          <li>Showed that gains in PSNR and SSIM did not translate into better downstream land-cover classification, which argues for perception-oriented evaluation over distortion metrics alone.</li>
+          <li>Set up reproducible training and evaluation protocols for comparing models on remote-sensing data.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Healthcare Startup</h3>
+          <span class="date">Feb 2023 – Aug 2023</span>
+        </div>
+        <p class="entry-sub">Research Assistant, AI for Health · Remote</p>
+        <ul>
+          <li>Reproduced and extended published methodology for early sepsis prediction over a six-month research internship.</li>
+          <li>Modeled irregularly sampled critical-care time series using the MIMIC-III and MIMIC-IV datasets.</li>
+          <li>Evaluated competing diagnostic approaches and maintained technical documentation for the team.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <article class="pub">
+        <p class="pub-title">A Survey of Early Detection and Prediction of Sepsis: From Clinical Scoring Systems to Deep Learning and Real-World Artificial Intelligence</p>
+        <p class="pub-authors">U. bin Mansoor, S. M. Rashid, S. R. Naqvi, and <strong>R. Ahmed</strong> <em>(authors 2–4 contributed equally)</em></p>
+        <p class="pub-venue"><em>IEEE Reviews in Biomedical Engineering (RBME)</em> · In preparation, 2026</p>
+      </article>
+    </section>
+
+    <!-- ===================== AWARDS ===================== -->
+    <section id="awards" class="section">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="plain-list">
+        <li>
+          <div class="entry-head"><strong>Mitacs Globalink Research Award</strong><span class="date">2026</span></div>
+          <p class="muted">Mitacs Canada. Competitive international award for a research placement at the University of Lethbridge, Alberta (Supervisor: Dr. Sidney Shapiro), on interpretable machine learning for assessing commercialization readiness in early-stage deep-tech ventures.</p>
+        </li>
+        <li>
+          <div class="entry-head"><strong>Vice Chancellor's Honour List (2×)</strong><span class="date">Fall 2024, Spring 2025</span></div>
+          <p class="muted">DHA Suffa University. Perfect 4.0 semester GPA.</p>
+        </li>
+        <li>
+          <div class="entry-head"><strong>Dean's Honour List</strong><span class="date">Spring 2024</span></div>
+          <p class="muted">DHA Suffa University. 3.9 semester GPA, ranked top of class.</p>
+        </li>
+        <li>
+          <div class="entry-head"><strong>M(IT)² Coding Tournament</strong><span class="date">Winter 2025</span></div>
+          <p class="muted">MIT Students' Society. Competitor.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>LegalFlow: Legal Case-Management SaaS with an AI Assistant</h3>
+          <span class="date">Team project</span>
+        </div>
+        <p>A working platform law firms use to run their cases, where each firm gets its own database schema. I owned several feature areas end to end.</p>
+        <ul>
+          <li>Built <strong>LOIS</strong>, an AI assistant with 20+ tools, each limited to the right firm and user role. It can carry out several steps in one request and drafts letters from case data and templates.</li>
+          <li>Gave it the ability to read case files using Gemini embeddings, pgvector and an OCR pipeline. It searches and summarizes documents and extracts deadlines, parties and key facts, each with a confidence score and a link back to the source.</li>
+          <li>Built a unified inbox for text, email and fax (Twilio, Resend, Telnyx) with per-firm routing and signature checks on every webhook.</li>
+          <li>Wrote Playwright end-to-end tests and database migrations that are safe to re-run.</li>
+        </ul>
+        <p class="tags"><span>Next.js</span><span>TypeScript</span><span>FastAPI</span><span>Supabase / PostgreSQL</span><span>pgvector</span><span>LLM tool-calling</span></p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Ilaaj AI: End-to-End AI Healthcare Platform</h3>
+          <a class="date" href="https://ilaaj-ai.vercel.app" target="_blank" rel="noopener">ilaaj-ai.vercel.app ↗</a>
+        </div>
+        <ul>
+          <li>Built and deployed a full-stack diagnostic platform giving patients and clinicians AI-based diagnostic and health-management tools.</li>
+          <li>Trained a chest X-ray classifier on CheXpert reaching <strong>0.89 AUC</strong> across five pathologies.</li>
+          <li>Added OCR-based prescription digitization and automated PDF report generation.</li>
+        </ul>
+        <p class="tags"><span>Python</span><span>PyTorch</span><span>FastAPI</span><span>Streamlit</span><span>Medical imaging</span></p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Hackathon Projects</h3>
+          <a class="date" href="https://github.com/Rehanabbaxi/Hackathon-Projects" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p>Recurring participant in Lablab.ai AI hackathons. Code for these projects is on GitHub.</p>
+      </article>
+    </section>
+
+    <!-- ===================== WRITING ===================== -->
+    <section id="writing" class="section">
+      <h2>Writing</h2>
+      <p class="muted">Technical articles on <a href="https://medium.com/@rehan020345" target="_blank" rel="noopener">Medium</a>.</p>
+      <div class="cards">
+        <!-- To link directly to an article, replace the href below with the article's own URL -->
+        <a class="card" href="https://medium.com/@rehan020345" target="_blank" rel="noopener">
+          <p class="card-title">Understanding Temporal Convolutional Networks (TCNs): From CNN Basics to Full Sequence Mastery</p>
+          <p class="card-meta">4.6K views · 2.5K reads</p>
+        </a>
+        <a class="card" href="https://medium.com/@rehan020345" target="_blank" rel="noopener">
+          <p class="card-title">Demystifying SRGAN: Deep Dive into Super-Resolution GANs</p>
+          <p class="card-meta">Medium article</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION & SKILLS ===================== -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>DHA Suffa University</h3>
+          <span class="date">Expected Jul 2027</span>
+        </div>
+        <p class="entry-sub">BS in Artificial Intelligence · CGPA 3.82 / 4.0 · Karachi, Pakistan</p>
+      </article>
+      <p><strong>IELTS Academic:</strong> Overall 7.0 (CEFR C1): Listening 7.5, Reading 8.5, Writing 6.5, Speaking 6.0</p>
+
+      <h3 class="subhead">Technical Skills</h3>
+      <dl class="skills">
+        <dt>Languages</dt><dd>Python</dd>
+        <dt>Frameworks</dt><dd>PyTorch, TensorFlow, FastAPI, Streamlit, Next.js / React</dd>
+        <dt>Methods</dt><dd>Deep Learning, GANs, Vision Transformers, Computer Vision, NLP, Scaling Laws, Learning with Noisy Labels, RAG and LLM Tool-Calling, Interpretable ML, Medical Imaging</dd>
+        <dt>Tools</dt><dd>Git, Linux, PostgreSQL / Supabase (pgvector), Playwright, VS Code, PyCharm, Hugging Face</dd>
+      </dl>
+
+      <h3 class="subhead">Certifications</h3>
+      <p>DeepLearning.AI (Coursera): Mathematics for Machine Learning and Data Science Specialization; AI for Medical Diagnosis; AI for Medical Prognosis.</p>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>I'm open to research collaborations and graduate opportunities. Send a message below or email me at
+        <a href="mailto:rehan020345@gmail.com">rehan020345@gmail.com</a>.</p>
+
+      <!-- Formspree form ID: xdeojjev (change it here if you create a new form) -->
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdeojjev" method="POST">
+        <div class="field-row">
+          <label>Name
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+        </div>
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p id="form-status" class="form-status" role="status" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Rehan Ahmed · Last updated September 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
