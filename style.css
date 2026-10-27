@@ -214,6 +214,8 @@ p { margin: 0 0 0.75rem; }
   gap: 0.25rem 1rem;
 }
 .entry-head h3 { font-size: 1.15rem; }
+.entry-link { color: var(--text); }
+.entry-link:hover { color: var(--accent); }
 
 .date { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
 a.date { color: var(--accent); }
@@ -234,6 +236,7 @@ a.date { color: var(--accent); }
 
 /* Publications */
 .pub { border-left: 3px solid var(--accent); padding-left: 1rem; }
+.pub + .pub { margin-top: 1.25rem; }
 .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.08rem; margin-bottom: 0.35rem; }
 .pub-authors, .pub-venue { color: var(--muted); margin-bottom: 0.2rem; }
 .pub-authors strong { color: var(--text); }
